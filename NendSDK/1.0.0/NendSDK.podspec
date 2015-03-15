@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "5.1"
   s.requires_arc = true
   s.source       = { :git => "https://github.com/manji602/NendSDK.git", :commit => "92e2332d2898c16028760b33b3225996ef43bea7" }
-  s.source_files = "NendSDK/**/*.{h,m,a}"
+  s.source_files = "NendSDK/**/*.{h,m}"
   s.frameworks   = "ImageIO", "Security", "AdSupport"
+  s.vendored_library = 'NendSDK/libNendAd.a'
 end
